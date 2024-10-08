@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Karon</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  header{
+    width: 100vw;
+    height: 60px;
+    background: deeppink;
+  }
+  header p{
+    color: white;
+    font-size: 25px;
+    font-weight: 450;
+    padding: 10px 0 0 10px;
+  }
+  
+  main{
+    height: calc(100vh - 60px);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2%;
+    gap: 2%;
+    background: #1e1e1e;
+  }
+  main article{
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(-190deg, #2e2e2e 70%, #5ef 30%);
+    animation: bgc 2s linear infinite;
+  }
+  main article p{
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: deeppink;
+    color: transparent;
+    font-size: 3rem;
+  }
+  main aside{
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(-15deg, #2e2e2e, #5e003e);
+  }
+  
+  
+  
+  @media screen and (max-width: 852px) {
+    main{
+      flex-direction: column-reverse;
+    }
+    main aside{
+      width: 100%;
+      height: 20%;
+    }
+    main article{
+      width: 100%;
+      min-height: 80%;
+      background: linear-gradient(-190deg, #2e2e2e 80%, #5ef 20%);
+    }
+  }
+  </style>
+</head>
+
+<body>
+  
+  <header>
+    <p>KARON</p>
+  </header>
+  
+  <main>
+    <article>
+      <p>WELCOME</p>
+    </article>
+    <aside>
+      
+    </aside>
+  </main>
+  
+  <script src="main.js"></script>
+</body>
+</html>
